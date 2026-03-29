@@ -1,0 +1,176 @@
+Launching burst to ALL targets simultaneously...
+
+Summary:
+  Success rate: 100.00%
+  Total:        440.2514 ms
+  Slowest:      134.3676 ms
+  Fastest:      8.8918 ms
+  Average:      21.4152 ms
+  Requests/sec: 454.2858
+
+  Total data:   13.28 KiB
+  Size/request: 68 B
+  Size/sec:     30.17 KiB
+
+Response time histogram:
+    8.892 ms [1]   |
+   21.439 ms [178] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+   33.987 ms [10]  |■
+   46.535 ms [1]   |
+   59.082 ms [0]   |
+   71.630 ms [0]   |
+   84.177 ms [0]   |
+   96.725 ms [0]   |
+  109.272 ms [0]   |
+  121.820 ms [7]   |■
+  134.368 ms [3]   |
+
+Response time distribution:
+  10.00% in 10.5428 ms
+  25.00% in 14.3710 ms
+  50.00% in 16.8173 ms
+  75.00% in 18.3672 ms
+  90.00% in 22.5845 ms
+  95.00% in 118.0326 ms
+  99.00% in 124.9179 ms
+  99.90% in 134.3676 ms
+  99.99% in 134.3676 ms
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   92.9061 ms, 91.1615 ms, 94.9946 ms
+  DNS-lookup:   0.0220 ms, 0.0132 ms, 0.0900 ms
+
+Status code distribution:
+  [403] 200 responses
+Summary:
+  Success rate: 100.00%
+  Total:        480.1845 ms
+  Slowest:      137.8224 ms
+  Fastest:      9.2671 ms
+  Average:      23.3013 ms
+  Requests/sec: 416.5065
+
+  Total data:   13.28 KiB
+  Size/request: 68 B
+  Size/sec:     27.66 KiB
+
+Response time histogram:
+    9.267 ms [1]   |
+   22.123 ms [172] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+   34.978 ms [15]  |■■
+   47.834 ms [2]   |
+   60.689 ms [0]   |
+   73.545 ms [0]   |
+   86.400 ms [0]   |
+   99.256 ms [0]   |
+  112.111 ms [0]   |
+  124.967 ms [6]   |■
+  137.822 ms [4]   |
+
+Response time distribution:
+  10.00% in 14.1021 ms
+  25.00% in 15.9665 ms
+  50.00% in 17.7592 ms
+  75.00% in 19.9107 ms
+  90.00% in 24.8765 ms
+  95.00% in 118.2363 ms
+  99.00% in 136.5387 ms
+  99.90% in 137.8224 ms
+  99.99% in 137.8224 ms
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   93.6616 ms, 91.9159 ms, 95.7127 ms
+  DNS-lookup:   0.0247 ms, 0.0142 ms, 0.0858 ms
+
+Status code distribution:
+  [403] 200 responses
+Summary:
+  Success rate: 100.00%
+  Total:        4.0187 sec
+  Slowest:      1.6876 sec
+  Fastest:      0.0870 sec
+  Average:      0.9119 sec
+  Requests/sec: 49.7679
+
+  Total data:   57.97 KiB
+  Size/request: 296 B
+  Size/sec:     14.42 KiB
+
+Response time histogram:
+  0.087 sec [1]  |
+  0.247 sec [1]  |
+  0.407 sec [3]  |■
+  0.567 sec [11] |■■■■■
+  0.727 sec [24] |■■■■■■■■■■■
+  0.887 sec [58] |■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.047 sec [69] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  1.207 sec [7]  |■■■
+  1.367 sec [12] |■■■■■
+  1.528 sec [5]  |■■
+  1.688 sec [9]  |■■■■
+
+Response time distribution:
+  10.00% in 0.5971 sec
+  25.00% in 0.7653 sec
+  50.00% in 0.8890 sec
+  75.00% in 0.9877 sec
+  90.00% in 1.3367 sec
+  95.00% in 1.5242 sec
+  99.00% in 1.6677 sec
+  99.90% in 1.6876 sec
+  99.99% in 1.6876 sec
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0007 sec, 0.0003 sec, 0.0022 sec
+  DNS-lookup:   0.0000 sec, 0.0000 sec, 0.0000 sec
+
+Status code distribution:
+  [200] 200 responses
+Summary:
+  Success rate: 100.00%
+  Total:        16.0550 sec
+  Slowest:      4.5646 sec
+  Fastest:      0.1860 sec
+  Average:      3.5889 sec
+  Requests/sec: 12.4572
+
+  Total data:   60.91 KiB
+  Size/request: 311 B
+  Size/sec:     3.79 KiB
+
+Response time histogram:
+  0.186 sec [1]   |
+  0.624 sec [4]   |■
+  1.062 sec [5]   |■
+  1.500 sec [5]   |■
+  1.937 sec [3]   |
+  2.375 sec [6]   |■
+  2.813 sec [7]   |■
+  3.251 sec [5]   |■
+  3.689 sec [11]  |■■
+  4.127 sec [125] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  4.565 sec [28]  |■■■■■■■
+
+Response time distribution:
+  10.00% in 2.1354 sec
+  25.00% in 3.7178 sec
+  50.00% in 3.9175 sec
+  75.00% in 4.0873 sec
+  90.00% in 4.1897 sec
+  95.00% in 4.2983 sec
+  99.00% in 4.4850 sec
+  99.90% in 4.5646 sec
+  99.99% in 4.5646 sec
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0017 sec, 0.0010 sec, 0.0026 sec
+  DNS-lookup:   0.0000 sec, 0.0000 sec, 0.0001 sec
+
+Status code distribution:
+  [200] 200 responses
+
+=== Scenario C complete. Results in /home/ec2-user/loadtest/../results ===

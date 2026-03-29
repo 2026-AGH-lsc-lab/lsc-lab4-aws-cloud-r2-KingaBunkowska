@@ -1,0 +1,98 @@
+=== Scenario A: Lambda Cold Start Characterization ===
+Ensure Lambda has been idle for 20+ minutes before running.
+
+--- Lambda Zip (30 sequential requests, 1/sec) ---
+Summary:
+  Success rate: 100.00%
+  Total:        30.1248 sec
+  Slowest:      1.2062 sec
+  Fastest:      0.0787 sec
+  Average:      0.1342 sec
+  Requests/sec: 0.9959
+
+  Total data:   11.13 KiB
+  Size/request: 379 B
+  Size/sec:     378 B
+
+Response time histogram:
+  0.079 sec [1]  |■
+  0.191 sec [28] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.304 sec [0]  |
+  0.417 sec [0]  |
+  0.530 sec [0]  |
+  0.642 sec [0]  |
+  0.755 sec [0]  |
+  0.868 sec [0]  |
+  0.981 sec [0]  |
+  1.093 sec [0]  |
+  1.206 sec [1]  |■
+
+Response time distribution:
+  10.00% in 0.0813 sec
+  25.00% in 0.0849 sec
+  50.00% in 0.0961 sec
+  75.00% in 0.1045 sec
+  90.00% in 0.1396 sec
+  95.00% in 0.1483 sec
+  99.00% in 1.2062 sec
+  99.90% in 1.2062 sec
+  99.99% in 1.2062 sec
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0508 sec, 0.0508 sec, 0.0508 sec
+  DNS-lookup:   0.0001 sec, 0.0001 sec, 0.0001 sec
+
+Status code distribution:
+  [200] 30 responses
+
+Waiting 20 minutes before container variant (for cold start reset)...
+Press Ctrl+C to skip the wait if running variants separately.
+Sleeping 1200s (20 min)...
+
+--- Lambda Container (30 sequential requests, 1/sec) ---
+Summary:
+  Success rate: 100.00%
+  Total:        30.1273 sec
+  Slowest:      1.2612 sec
+  Fastest:      0.0781 sec
+  Average:      0.1385 sec
+  Requests/sec: 0.9958
+
+  Total data:   11.13 KiB
+  Size/request: 379 B
+  Size/sec:     378 B
+
+Response time histogram:
+  0.078 sec [1]  |■
+  0.196 sec [28] |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.315 sec [0]  |
+  0.433 sec [0]  |
+  0.551 sec [0]  |
+  0.670 sec [0]  |
+  0.788 sec [0]  |
+  0.906 sec [0]  |
+  1.025 sec [0]  |
+  1.143 sec [0]  |
+  1.261 sec [1]  |■
+
+Response time distribution:
+  10.00% in 0.0811 sec
+  25.00% in 0.0904 sec
+  50.00% in 0.0957 sec
+  75.00% in 0.1120 sec
+  90.00% in 0.1423 sec
+  95.00% in 0.1573 sec
+  99.00% in 1.2612 sec
+  99.90% in 1.2612 sec
+  99.99% in 1.2612 sec
+
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0515 sec, 0.0515 sec, 0.0515 sec
+  DNS-lookup:   0.0001 sec, 0.0001 sec, 0.0001 sec
+
+Status code distribution:
+  [200] 30 responses
+
+=== Scenario A complete. Results in /home/ec2-user/loadtest/../results ===
