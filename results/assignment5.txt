@@ -1,0 +1,3 @@
+1. Lambda - 0 idle cost. AWS lambda is scaling to 0, so it doesn't generate any cost while idle. The trade-off is cold-start.
+2. Fargate - 0.5vCPU 1GB RAM - 0.04048 * 0.5 + 0.004445 per hour = 0.24684 per hour. Works all the time. 0.24684 * 24 * 30 = 17.77248 per month
+3. EC2 - t3.small - 0.0208 per hour. Works all the time. 0.0208 * 24 * 30 = 14.976$
